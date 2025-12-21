@@ -1,0 +1,11 @@
+[package]
+name = "rust-servers-services-apps"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4.2.1"
+actix-rt = "2.7.0"
+
+[[bin]]
+name = "basic-server"
