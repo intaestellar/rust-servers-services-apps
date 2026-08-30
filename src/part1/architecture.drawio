@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="part1-arch" name="Part1 Architecture">
+    <mxGraphModel dx="1200" dy="800" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- users -->
+        <mxCell id="a1" value="사용자" style="shape=actor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="185" y="10" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="a2" value="사용자" style="shape=actor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="325" y="10" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="a3" value="사용자" style="shape=actor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="467" y="10" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="a4" value="사용자" style="shape=actor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="640" y="10" width="30" height="40" as="geometry"/></mxCell>
+
+        <!-- out of scope clients -->
+        <mxCell id="c1" value="모바일 앱&#10;(iOS/Android)" style="rounded=0;html=1;dashed=1;fillColor=#FFFFFF;strokeColor=#666666;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="145" y="70" width="110" height="55" as="geometry"/></mxCell>
+        <mxCell id="c2" value="비 러스트&#10;웹 애플리케이션&#10;(React/Angular/Vue)" style="rounded=0;html=1;dashed=1;fillColor=#FFFFFF;strokeColor=#666666;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="270" y="70" width="140" height="55" as="geometry"/></mxCell>
+        <mxCell id="c3" value="러스트 웹&#10;애플리케이션&#10;(WASM)" style="rounded=0;html=1;dashed=1;fillColor=#FFFFFF;strokeColor=#666666;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="425" y="70" width="115" height="55" as="geometry"/></mxCell>
+        <mxCell id="c4" value="인터넷 브라우저" style="text;html=1;align=center;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="590" y="70" width="130" height="30" as="geometry"/></mxCell>
+
+        <!-- arrows -->
+        <mxCell id="ar1" style="shape=singleArrow;direction=south;html=1;fillColor=#A6A6A6;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="185" y="133" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="ar2" style="shape=singleArrow;direction=south;html=1;fillColor=#A6A6A6;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="325" y="133" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="ar3" style="shape=singleArrow;direction=south;html=1;fillColor=#A6A6A6;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="467" y="133" width="30" height="40" as="geometry"/></mxCell>
+        <mxCell id="ar4" style="shape=doubleArrow;direction=south;html=1;fillColor=#A6A6A6;strokeColor=#666666;" vertex="1" parent="1"><mxGeometry x="640" y="105" width="30" height="68" as="geometry"/></mxCell>
+
+        <!-- layer 1 -->
+        <mxCell id="L1" value="API &amp; 애플리케이션(외부 연결)" style="rounded=1;arcSize=8;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=bottom;align=right;spacingRight=10;spacingBottom=4;" vertex="1" parent="1"><mxGeometry x="75" y="175" width="680" height="100" as="geometry"/></mxCell>
+        <mxCell id="ws" value="러스트 웹 서비스(API)" style="rounded=1;arcSize=8;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="90" y="185" width="450" height="60" as="geometry"/></mxCell>
+        <mxCell id="ws1" value="강의" style="rounded=1;arcSize=30;html=1;fillColor=#808080;strokeColor=#000000;fontColor=#FFFFFF;" vertex="1" parent="1"><mxGeometry x="102" y="202" width="70" height="28" as="geometry"/></mxCell>
+        <mxCell id="ws2" value="강사" style="rounded=1;arcSize=30;html=1;fillColor=#808080;strokeColor=#000000;fontColor=#FFFFFF;" vertex="1" parent="1"><mxGeometry x="390" y="202" width="70" height="28" as="geometry"/></mxCell>
+        <mxCell id="ssr" value="러스트 웹&#10;애플리케이션&#10;(서버 사이드 렌더링)" style="rounded=1;arcSize=8;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="570" y="185" width="170" height="65" as="geometry"/></mxCell>
+
+        <!-- layer 2 -->
+        <mxCell id="L2" value="애플리케이션 모듈" style="rounded=1;arcSize=8;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=bottom;align=right;spacingRight=10;spacingBottom=4;" vertex="1" parent="1"><mxGeometry x="75" y="290" width="680" height="170" as="geometry"/></mxCell>
+        <mxCell id="m1" value="사용자 인증&#10;(이메일/비밀번호)" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="105" y="310" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="m2" value="템플릿 및 폼&#10;핸들링" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="275" y="310" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="m3" value="Custom error&#10;핸들링" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="445" y="310" width="140" height="55" as="geometry"/></mxCell>
+        <mxCell id="m4" value="데이터베이스 접근&#10;라이브러리" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="600" y="310" width="140" height="55" as="geometry"/></mxCell>
+        <mxCell id="m5" value="API 인증&#10;(JWT 토큰)" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="105" y="382" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="m6" value="애플리케이션 상태" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="275" y="382" width="150" height="55" as="geometry"/></mxCell>
+        <mxCell id="m7" value="자동화된 테스트&#10;스크립트" style="rounded=1;arcSize=15;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="445" y="382" width="140" height="55" as="geometry"/></mxCell>
+
+        <!-- layer 3 -->
+        <mxCell id="L3" value="소프트웨어 인프라/코딩" style="rounded=1;arcSize=8;html=1;fillColor=#FFFFFF;strokeColor=#000000;verticalAlign=bottom;align=right;spacingRight=10;spacingBottom=4;" vertex="1" parent="1"><mxGeometry x="75" y="472" width="680" height="100" as="geometry"/></mxCell>
+        <mxCell id="i1" value="RDBMS" style="rounded=1;arcSize=15;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="105" y="490" width="140" height="50" as="geometry"/></mxCell>
+        <mxCell id="i2" value="로깅" style="rounded=1;arcSize=15;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="280" y="490" width="140" height="50" as="geometry"/></mxCell>
+        <mxCell id="i3" value="애플리케이션&#10;구성" style="rounded=1;arcSize=15;html=1;fillColor=#FFFFFF;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="450" y="490" width="140" height="50" as="geometry"/></mxCell>
+
+        <!-- side activity bar -->
+        <mxCell id="side" value="프로덕션 준비, 패키징/배포, 벤치마킹" style="rounded=1;arcSize=6;html=1;fillColor=#808080;strokeColor=#000000;fontColor=#FFFFFF;horizontal=0;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="10" y="175" width="45" height="397" as="geometry"/></mxCell>
+
+        <!-- legend -->
+        <mxCell id="lg" value="범례" style="text;html=1;align=left;verticalAlign=middle;" vertex="1" parent="1"><mxGeometry x="75" y="578" width="60" height="20" as="geometry"/></mxCell>
+        <mxCell id="lgbox" value="" style="rounded=1;arcSize=8;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="75" y="598" width="680" height="62" as="geometry"/></mxCell>
+        <mxCell id="lg1" value="웹 서비스" style="rounded=1;arcSize=20;html=1;fillColor=#A6A6A6;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="90" y="610" width="105" height="40" as="geometry"/></mxCell>
+        <mxCell id="lg2" value="웹&#10;애플리케이션" style="rounded=1;arcSize=20;html=1;fillColor=#FFFFFF;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="205" y="610" width="105" height="40" as="geometry"/></mxCell>
+        <mxCell id="lg3" value="애플리케이션&#10;모듈" style="rounded=1;arcSize=20;html=1;fillColor=#D9D9D9;strokeColor=#000000;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="320" y="610" width="105" height="40" as="geometry"/></mxCell>
+        <mxCell id="lg4" value="액티비티" style="rounded=1;arcSize=20;html=1;fillColor=#808080;strokeColor=#000000;fontColor=#FFFFFF;" vertex="1" parent="1"><mxGeometry x="435" y="610" width="105" height="40" as="geometry"/></mxCell>
+        <mxCell id="lg5" value="인프라/코딩" style="rounded=1;arcSize=20;html=1;fillColor=#FFFFFF;strokeColor=#000000;" vertex="1" parent="1"><mxGeometry x="550" y="610" width="90" height="40" as="geometry"/></mxCell>
+        <mxCell id="lg6" value="프로젝트&#10;범위 외" style="rounded=1;arcSize=20;html=1;dashed=1;fillColor=#FFFFFF;strokeColor=#666666;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="650" y="610" width="95" height="40" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
