@@ -49,6 +49,23 @@ async fn main() -> io::Result<()> {
    HttpServer::new(app).bind("127.0.0.1:3000")?.run().await
 }
 ```
+
+#### 읽고 느낀점
+러스트 문법을 잘 모르기 때문에 아직 많이 어색하다. handler를 FE에서는 많이 사용했는데 BE에 나오니 이것 또한 어색하다
+
+특히
+```rust
+let selected_course = app_state
+        .courses
+        .lock()
+        .unwrap()
+        .clone()
+        .into_iter()
+        .find(|x| x.tutor_id == tutor_id && x.course_id == Some(course_id))
+        .ok_or("Course not found");
+```
+
+대충 무엇을 하는지 알겠는데 이렇게 까지 해야하는 이유는 아직 잘 모르겠다.
 ### 4. 데이터베이스 조작하기
 ### 5. 에러 핸들링하기
 ### 6. API의 진화와 두려움 없는 리팩터링
