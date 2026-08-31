@@ -9,7 +9,7 @@
 3. 스레드 안전성
 
 #### 무엇을 만들 것인가?
-[EzyTutors라는 디지털 스토어프런트](https://github.com/user-attachments/assets/48a2e101-3155-4a59-a49e-bdfd34e9dd06)
+![EzyTutors라는 디지털 스토어프런트](https://github.com/user-attachments/assets/48a2e101-3155-4a59-a49e-bdfd34e9dd06)
 
 ### 2. 기본 웹서버 작성하기
 3장 완료 후 읽어 보기
