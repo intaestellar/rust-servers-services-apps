@@ -13,7 +13,7 @@
 
 ### 2. 기본 웹서버 작성하기
 3장 완료 후 읽어 보기
-### 3. RESTful 웹 서비스 구축하기
+### [3. RESTful 웹 서비스 구축하기](https://github.com/intaestellar/rust-servers-services-apps/pull/3)
 Actix 소개
 1. Actix를 사용해 기본적인 비동기 HTTP 서버를 구현
 2. 튜터 웹 서비스를 위한 REST API를 설계하고 구현
@@ -66,7 +66,8 @@ let selected_course = app_state
 ```
 
 대충 무엇을 하는지 알겠는데 이렇게 까지 해야하는 이유는 아직 잘 모르겠다.
-### 4. 데이터베이스 조작하기
+### [4. 데이터베이스 조작하기](https://github.com/intaestellar/rust-servers-services-apps/pull/4)
+'Actix에서 기본적인 HTTP 서버를 생성하고 시작하는 네 단계'를 반복 연습하였다.
 ### 5. 에러 핸들링하기
 ### 6. API의 진화와 두려움 없는 리팩터링
 ## part2 서버 사이드 웹 애플리케이션
